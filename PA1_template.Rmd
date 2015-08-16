@@ -43,7 +43,6 @@ names(meanmedian) <- c("Day","Steps")
 summarymean <- mean(countdaily$steps)
 summarymedian <- median(countdaily$steps)
 ```
-
 ## 3. What is the average daily activity pattern?
 
 ###### Create a data frame and variables containing the data needed to create the requested graph and answer the follow-on question.
