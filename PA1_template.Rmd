@@ -36,7 +36,7 @@ ggplot(data=totalstepsperday, aes(x=Day, y=TotalSteps)) + geom_histogram(stat = 
 
 ###### Finally, calculate and report the mean and median of the total number of steps taen per day.
 
-```{r]
+```{r}
 meanmedian <- with(countdaily, aggregate(countdaily$steps, list(Day = countdaily$date), function(x) 
   {c(Mean=mean(x) ,Median=median(x, na.rm=TRUE) )}))
 names(meanmedian) <- c("Day","Steps")
