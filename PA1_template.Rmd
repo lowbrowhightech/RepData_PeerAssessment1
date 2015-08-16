@@ -55,7 +55,7 @@ intwithmaxsteps <- meanstepsperintday[meanstepsperintday$MeanIntervalSteps == ma
 ```
 
 ###### Next, make a time series plot of the 5-minute interval (x-axis) and the average number of steps taken, which is averaged across all days (y-axis).
-```{r]
+```{r}
 with(meanstepsperintday, plot(meanstepsperintday, NULL, type ="l", main = "Average Steps Across 5-minute Intervals"
   ,xlab="5-Second Intervals Across the Day", col = "red", xaxt="n", ylab="Average Steps Across All Days"))
 axis(side=1, at=seq(0, 2355, by=50),labels = seq(0,2355,by = 50), cex.axis=0.60, las = 1.5)
